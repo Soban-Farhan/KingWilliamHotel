@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <UserSecretsId>aspnet-FinalProject_KingWilliamHotelManagementAPI-673B84E6-9233-4169-A3D9-D6A99328641C</UserSecretsId>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+
+</Project>
