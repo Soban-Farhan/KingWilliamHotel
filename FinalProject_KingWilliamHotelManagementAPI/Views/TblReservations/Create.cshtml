@@ -1,0 +1,48 @@
+﻿@model KingWilliamHotelManagementAPI.Models.TblReservation
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>TblReservation</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="PersonId" class="control-label"></label>
+                <select asp-for="PersonId" class ="form-control" asp-items="ViewBag.PersonId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="RoomNumber" class="control-label"></label>
+                <select asp-for="RoomNumber" class ="form-control" asp-items="ViewBag.RoomNumber"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="ExpectedArriveDate" class="control-label"></label>
+                <input asp-for="ExpectedArriveDate" class="form-control" />
+                <span asp-validation-for="ExpectedArriveDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ExpectedLeaveDate" class="control-label"></label>
+                <input asp-for="ExpectedLeaveDate" class="form-control" />
+                <span asp-validation-for="ExpectedLeaveDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReservationNotes" class="control-label"></label>
+                <input asp-for="ReservationNotes" class="form-control" />
+                <span asp-validation-for="ReservationNotes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

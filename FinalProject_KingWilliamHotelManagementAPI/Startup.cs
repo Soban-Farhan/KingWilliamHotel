@@ -43,9 +43,6 @@ namespace KingWilliamHotelManagementAPI
             services.AddDbContext<KingWilliamHotel_ManagementSystemContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            //services.AddDefaultIdentity<IdentityUser>()
-            //    .AddDefaultUI(UIFramework.Bootstrap4)
-            //    .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddIdentity<ApplicationUser, ApplicationRole>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
