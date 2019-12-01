@@ -10,46 +10,45 @@ namespace KingWilliamHotelManagementAPI.Models
     public class ReservationModel
     {
 
-        [Required]
+        [Required(ErrorMessage = "Please enter your first name.")]
         [DisplayName("First:")]
         public string FirstName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Please enter your last name.")]
         [DisplayName("Last:")]
         public string LastName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Please enter your house number.")]
         [DisplayName("Street Number:")]
         [Range(1,300)]
         public int StreetNumber { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Please enter your house address.")]
         [DisplayName("Street Name:")]
         public string StreetName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Please enter a Postal Code.")]
+        [DisplayName("Postal Code:")]
+        [StringLength(6, ErrorMessage ="Invalid Postal Code.", MinimumLength = 6)]
+        public virtual string PostalCode { get; set; }
+
+        [Required(ErrorMessage = "Please enter your city.")]
         [DisplayName("City:")]
         public string City { get; set; }
 
-        [Required]
-        [DisplayName("Postal Code:")]
-        [StringLength(6, ErrorMessage ="Postal Code not valid", MinimumLength = 6)]
-        public virtual string PostalCode { get; set; }
-
-        [Required]
+        [Required(ErrorMessage = "Please enter your country.")]
         [DisplayName("Country:")]
         public string Country { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Please enter your phone number.")]
         [DisplayName("Phone:")]
         public string PhoneNumber { get; set; }
-        
-        
-        [DisplayName("Email Address:")]
+
         [EmailAddress]
+        [DisplayName("Email Address:")]
         public string EmailAddress { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Please enter your country.")]
         [DisplayName("Arrival Date:")]
         public DateTime ExpectedArrivalDate { get; set; }
 
@@ -58,6 +57,9 @@ namespace KingWilliamHotelManagementAPI.Models
         public DateTime ExpectedLeaveDate { get; set; }
 
         [Required]
+        [DisplayName("Available Room: ")]
+        public int RoomNumber { get; set; }
+
         [DisplayName("Reservation Notes:")]
         public string Notes { get; set; }
     }

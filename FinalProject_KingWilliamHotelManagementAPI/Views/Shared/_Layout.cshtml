@@ -19,9 +19,26 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler bg-light" data-toggle="collapse" type="button" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="../Account/Login"><button type="button" class="btn btn-outline-dark btn-sl"> Login </button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Home/Reservation"><button type="button" class="btn btn-primary btn-sl"> Make a Reservation </button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        @*<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">King William Hotel</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -38,7 +55,7 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav>*@
     </header>
     <div class="container">
         <partial name="_CookieConsentPartial" />
@@ -48,7 +65,15 @@
     </div>
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2019 - KingWilliamHotelManagementAPI - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="row">
+                <div class="col-lg">
+                    &copy; 2019 - King William Hotel 
+                </div>
+                <div class="col-lg text-right">
+                    Developed By: <a href="https://sobanfarhan.net/">Soban Farhan</a> & <a href="https://ramandeeprathor.com/">Ramandeep Rathor</a>
+                </div>
+            </div>
+             
         </div>
     </footer>
     <environment include="Development">

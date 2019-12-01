@@ -49,7 +49,7 @@ namespace KingWilliamHotelManagementAPI.Controllers
         public IActionResult Create()
         {
             ViewData["PersonId"] = new SelectList(_context.TblPerson, "PersonId", "City");
-            ViewData["RoomNumber"] = new SelectList(_context.TblRooms, "RoomNumber", "Description");
+            ViewData["RoomNumber"] = new SelectList(_context.TblRooms.Where(s=> s.RoomStatus == 0), "RoomNumber", "RoomNumber");
             return View();
         }
 

@@ -8,6 +8,8 @@ namespace KingWilliamHotelManagementAPI.Models
 {
     public class ApplicationRole : IdentityRole<int>
     {
-
+        public ApplicationRole(string roleName) : base(roleName)
+        {
+        }
     }
 }
