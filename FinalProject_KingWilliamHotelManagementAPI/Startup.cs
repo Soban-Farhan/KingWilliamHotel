@@ -45,10 +45,10 @@ namespace KingWilliamHotelManagementAPI
                     Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddIdentity<ApplicationUser, ApplicationRole>()
-                .AddDefaultUI(UIFramework.Bootstrap4)
-                .AddDefaultTokenProviders()
                 .AddRoles<ApplicationRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>(); 
+                .AddDefaultUI(UIFramework.Bootstrap4)
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
@@ -80,13 +80,16 @@ namespace KingWilliamHotelManagementAPI
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+            CreateRoles(serviceProvider, userManager).Wait();
         }
 
         private async Task CreateRoles(IServiceProvider serviceProvider, UserManager<ApplicationUser> userManager)
         {
             //adding custom roles
             var RoleManager = serviceProvider.GetRequiredService<RoleManager<ApplicationRole>>();
-            string[] roleNames = { "Admin", "Concierge" };
+            string[] roleNames = { "Admin", "Concierge", "Owner", "Hotel Manager",
+                                   "Maintenance", "Bell Hop", "House Keeping", "Restaurant Manager",
+                                    "Server", "Bartender", "Cook", "Line Cook" };
             IdentityResult roleResult;
 
             foreach (var roleName in roleNames)

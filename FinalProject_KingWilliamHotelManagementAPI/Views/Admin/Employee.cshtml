@@ -1,0 +1,30 @@
+﻿@model IEnumerable<KingWilliamHotelManagementAPI.Models.TblPerson>
+
+@{
+    ViewData["Title"] = "Employee";
+}
+
+<h1>List of all Employee</h1>
+
+<p>
+    <a asp-action="NewEmployee"><button type="button" class="btn btn-outline-dark btn-sl"> New Employee</button></a>
+</p>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">@item.FirstName @item.LastName</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">@item.EmailAddress</h6>
+                    <p class="card-text">@item.PhoneNumber</p>
+                    <div class="text-center">
+                        <a href="./UpdateEmployee/@item.PersonId" class="card-link"><button type="button" class="btn btn-outline-dark btn-sl">Edit </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+

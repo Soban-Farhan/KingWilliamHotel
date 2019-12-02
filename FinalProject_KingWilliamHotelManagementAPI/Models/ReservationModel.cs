@@ -19,12 +19,12 @@ namespace KingWilliamHotelManagementAPI.Models
         public string LastName { get; set; }
 
         [Required(ErrorMessage = "Please enter your house number.")]
-        [DisplayName("Street Number:")]
-        [Range(1,300)]
+        [DisplayName("Street or Apt #:")]
+        [Range(1,9999)]
         public int StreetNumber { get; set; }
 
         [Required(ErrorMessage = "Please enter your house address.")]
-        [DisplayName("Street Name:")]
+        [DisplayName("Street or Apt Name:")]
         public string StreetName { get; set; }
 
         [Required(ErrorMessage = "Please enter a Postal Code.")]
@@ -49,11 +49,11 @@ namespace KingWilliamHotelManagementAPI.Models
         public string EmailAddress { get; set; }
 
         [Required(ErrorMessage = "Please enter your country.")]
-        [DisplayName("Arrival Date:")]
+        [DisplayName("Check in:")]
         public DateTime ExpectedArrivalDate { get; set; }
 
         [Required]
-        [DisplayName("Leave Date:")]
+        [DisplayName("Check out:")]
         public DateTime ExpectedLeaveDate { get; set; }
 
         [Required]

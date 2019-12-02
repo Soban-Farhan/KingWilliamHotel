@@ -11,15 +11,14 @@
         <form asp-action="Reservation">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="row">
-                <div class="col-5">
+                <div class="col-lg">
                     <div class="form-group">
                         <label asp-for="FirstName"></label>
                         <input asp-for="FirstName" class="form-control" />
                         <span asp-validation-for="FirstName" class="text-danger"></span>
                     </div>
                 </div>
-                <div class="col-2"></div>
-                <div class="col-5">
+                <div class="col-lg">
                     <div class="form-group">
                         <label asp-for="LastName"></label>
                         <input asp-for="LastName" class="form-control" />
@@ -52,7 +51,7 @@
                         <span asp-validation-for="StreetNumber" class="text-danger"></span>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg">
                     <div class="form-group">
                         <label asp-for="StreetName"></label>
                         <input asp-for="StreetName" class="form-control" />
@@ -89,7 +88,7 @@
                     <div class="form-group">
                         <label asp-for="RoomNumber"></label>
                         <select asp-for="RoomNumber" class="form-control" asp-items="ViewBag.RoomNumber"></select>
-                        <span asp-validation-for="ExpectedArrivalDate" class="text-danger"></span>
+                        <span asp-validation-for="RoomNumber" class="text-danger"></span>
                         <a id="housePreview" href="">Preview the room?</a>
                     </div>
                 </div>
@@ -138,7 +137,6 @@
 
             $("#RoomNumber").change(function () {
                 $("#housePreview").attr("href", "../Home/Room/" + $("#RoomNumber option:selected").text());
-                alert($("#PhoneNumber").text())
             });
 
         });

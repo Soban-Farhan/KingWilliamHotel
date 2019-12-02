@@ -19,7 +19,7 @@ namespace KingWilliamHotelManagementAPI.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("KingWilliamHotelManagementAPI.Data.ApplicationRole", b =>
+            modelBuilder.Entity("KingWilliamHotelManagementAPI.Models.ApplicationRole", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -44,7 +44,7 @@ namespace KingWilliamHotelManagementAPI.Migrations
                     b.ToTable("AspNetRoles");
                 });
 
-            modelBuilder.Entity("KingWilliamHotelManagementAPI.Data.ApplicationUser", b =>
+            modelBuilder.Entity("KingWilliamHotelManagementAPI.Models.ApplicationUser", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -181,7 +181,7 @@ namespace KingWilliamHotelManagementAPI.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
                 {
-                    b.HasOne("KingWilliamHotelManagementAPI.Data.ApplicationRole")
+                    b.HasOne("KingWilliamHotelManagementAPI.Models.ApplicationRole")
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -189,7 +189,7 @@ namespace KingWilliamHotelManagementAPI.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<int>", b =>
                 {
-                    b.HasOne("KingWilliamHotelManagementAPI.Data.ApplicationUser")
+                    b.HasOne("KingWilliamHotelManagementAPI.Models.ApplicationUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -197,7 +197,7 @@ namespace KingWilliamHotelManagementAPI.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<int>", b =>
                 {
-                    b.HasOne("KingWilliamHotelManagementAPI.Data.ApplicationUser")
+                    b.HasOne("KingWilliamHotelManagementAPI.Models.ApplicationUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -205,12 +205,12 @@ namespace KingWilliamHotelManagementAPI.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<int>", b =>
                 {
-                    b.HasOne("KingWilliamHotelManagementAPI.Data.ApplicationRole")
+                    b.HasOne("KingWilliamHotelManagementAPI.Models.ApplicationRole")
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("KingWilliamHotelManagementAPI.Data.ApplicationUser")
+                    b.HasOne("KingWilliamHotelManagementAPI.Models.ApplicationUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -218,7 +218,7 @@ namespace KingWilliamHotelManagementAPI.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<int>", b =>
                 {
-                    b.HasOne("KingWilliamHotelManagementAPI.Data.ApplicationUser")
+                    b.HasOne("KingWilliamHotelManagementAPI.Models.ApplicationUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
