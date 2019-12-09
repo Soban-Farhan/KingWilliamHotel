@@ -40,7 +40,7 @@ namespace KingWilliamHotelManagementAPI
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddDbContext<KingWilliamHotel_ManagementSystemContext>(options =>
+            services.AddDbContext<kwhotelContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
 

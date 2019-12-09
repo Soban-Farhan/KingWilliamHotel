@@ -11,9 +11,9 @@ namespace KingWilliamHotelManagementAPI.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly KingWilliamHotel_ManagementSystemContext _context;
+        private readonly kwhotelContext _context;
 
-        public HomeController(KingWilliamHotel_ManagementSystemContext context)
+        public HomeController(kwhotelContext context)
         {
             _context = context;
         }
@@ -48,7 +48,9 @@ namespace KingWilliamHotelManagementAPI.Controllers
                 return Redirect("/");
             }
             ViewData["RoomID"] = id;
-            return View();
+            var room = _context.TblRooms.Find(id);
+
+            return View(room);
         }
 
         [HttpPost]

@@ -10,7 +10,7 @@ namespace KingWilliamHotelManagementAPI.Models
             TblCustomer = new HashSet<TblCustomer>();
         }
 
-        public int CreditCardNumber { get; set; }
+        public long CreditCardNumber { get; set; }
         public string CreditCardName { get; set; }
         public DateTime CreditCardExpiryDate { get; set; }
 

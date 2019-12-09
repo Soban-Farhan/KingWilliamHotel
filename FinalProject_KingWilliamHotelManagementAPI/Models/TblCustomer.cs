@@ -11,7 +11,7 @@ namespace KingWilliamHotelManagementAPI.Models
         }
 
         public int CustomerId { get; set; }
-        public int CreditCardNumber { get; set; }
+        public long CreditCardNumber { get; set; }
 
         public virtual LkpCreditCard CreditCardNumberNavigation { get; set; }
         public virtual TblPerson Customer { get; set; }

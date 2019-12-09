@@ -1,0 +1,45 @@
+﻿@model KingWilliamHotelManagementAPI.Models.HouseKeepingModel
+
+@{
+    ViewData["Title"] = "EditHouseKeeping";
+}
+<div class="text-center">
+    <h1>Create House Keeping</h1>
+</div>
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+        <hr/>
+        <form asp-action="CreateHouseKeeping">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="row">
+                <div class="col-lg">
+                    <label asp-for="employeeName"></label>
+                    <select asp-for="empID" class="form-control">
+                        @foreach (var x in ViewBag.EmployeeId)
+                        {
+                            <option value="@x.employeeId"> @x.employeeName </option>
+                        }
+                    </select>
+                    <span asp-validation-for="empID" class="text-danger"></span>
+                </div>
+                <div class="col-lg">
+                    <label asp-for="roomNumber"></label>
+                    <select asp-for="roomNumber" class="form-control" asp-items="ViewBag.RoomNumber"></select>
+                    <span asp-validation-for="roomNumber" class="text-danger"></span>
+                </div>
+                @*<div class="col-lg">
+                    <label asp-for="houseKeepingDate"></label>
+                    <input asp-for="houseKeepingDate" class="form-control" />
+                    <span asp-validation-for="houseKeepingDate" class="text-danger"></span>
+                    <select asp-for="houseKeepingDate" class="form-control" asp-items="ViewBag.RoomNumber"></select>
+                </div>*@
+            </div>
+            <div class="text-right form-group">
+                <br/>
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+    <div class="col-1"></div>
+</div>

@@ -1,0 +1,95 @@
+﻿@model KingWilliamHotelManagementAPI.Models.InvoiceModel
+@using System;
+
+@{
+    ViewData["Title"] = "Invoice";
+    var text = (Model.TblGuestStay.EndDatetime - Model.TblGuestStay.StartDatetime).Value.TotalDays;
+    var total = 0.0;
+}
+
+@*@foreach (var item in collection)
+{
+
+}*@
+
+<h2>Invoice: @Html.DisplayFor(model => model.TblPerson.FirstName) @Html.DisplayFor(model => model.TblPerson.LastName)</h2>
+
+<div class="text-right">
+    <p><b>Stay Start/End Date:</b> @Html.DisplayFor(model => model.TblGuestStay.StartDatetime)&nbsp;-&nbsp;@Html.DisplayFor(model => model.TblGuestStay.EndDatetime)</p>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h5>Information: </h5>
+        <p>
+            <b>Address:</b> @Html.DisplayFor(model => model.TblPerson.StreetNumber), @Html.DisplayFor(model => model.TblPerson.StreetName),
+            @Html.DisplayFor(model => model.TblPerson.City), @Html.DisplayFor(model => model.TblPerson.Country) @Html.DisplayFor(model => model.TblPerson.PostalCode)<br />
+
+            <b>Email Address:</b> @Html.DisplayFor(model => model.TblPerson.EmailAddress)<br />
+            <b>Phone #:</b> @Html.DisplayFor(model => model.TblPerson.PhoneNumber)<br />
+        </p>
+    </div>
+    <div class="col-12">
+        <h5>Items: </h5>
+        <div class="row">      
+            <div class="col-lg-12 text-right">
+                <div class="card p-2">
+                    <p class="card-text"> Room #: @Html.DisplayFor(model => model.TblRooms.RoomNumber) ................................................ @Model.TblRooms.Price.ToString("c") x @text Days</p>
+                    @{ 
+                        total += Convert.ToDouble(Model.TblRooms.Price) * text;
+                    } 
+                </div>
+            </div>
+            @foreach (var item in Model.TblGuestLineItems)
+            {
+                <div class="col-lg-12 text-right">
+                    <br/>
+                    <div class="card p-2">
+                        <p class="card-text"> Item #: @item.ItemId ................................................ @item.ItemPrice.ToString("c")</p>
+                        @{ total += Convert.ToDouble(item.ItemPrice); }
+                    </div>
+                </div>
+                            }
+        </div>
+        <hr/>
+        <div class="text-right">
+            <p>Total: ............. @total.ToString("c")</p>
+        </div>
+    </div>
+</div>
+
+@*<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Customer:
+            </th>
+            <th>
+                Start & End Date:
+            </th>
+            <th>
+                Invoice Create Date:
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TblPerson.FirstName) @Html.DisplayFor(modelItem => item.TblPerson.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TblGuestStay.StartDatetime) @Html.DisplayFor(modelItem => item.TblGuestStay.EndDatetime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TblGuestInvoice.InvoiceDateTime)
+                </td>
+                <td>
+                    <a asp-action="Invoice" asp-route-id="@item.TblGuestInvoice.InvoiceId">View</a>
+                </td>
+            </tr>
+            
+        }
+    </tbody>
+</table>*@

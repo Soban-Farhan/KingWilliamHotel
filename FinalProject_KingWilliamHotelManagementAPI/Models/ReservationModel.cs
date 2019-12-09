@@ -54,7 +54,7 @@ namespace KingWilliamHotelManagementAPI.Models
 
         [Required]
         [DisplayName("Check out:")]
-        public DateTime ExpectedLeaveDate { get; set; }
+        public DateTime? ExpectedLeaveDate { get; set; }
 
         [Required]
         [DisplayName("Available Room: ")]
@@ -62,5 +62,9 @@ namespace KingWilliamHotelManagementAPI.Models
 
         [DisplayName("Reservation Notes:")]
         public string Notes { get; set; }
+
+        public int PersonID { get; set; }
+
+        public int ReservationID { get; set; }
     }
 }

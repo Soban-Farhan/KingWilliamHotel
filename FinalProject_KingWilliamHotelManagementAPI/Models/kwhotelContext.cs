@@ -1,18 +1,16 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.Extensions.Configuration;
 
 namespace KingWilliamHotelManagementAPI.Models
 {
-    public partial class KingWilliamHotel_ManagementSystemContext : DbContext
+    public partial class kwhotelContext : DbContext
     {
-        IConfiguration configuration;
-        public KingWilliamHotel_ManagementSystemContext()
+        public kwhotelContext()
         {
         }
 
-        public KingWilliamHotel_ManagementSystemContext(DbContextOptions<KingWilliamHotel_ManagementSystemContext> options)
+        public kwhotelContext(DbContextOptions<kwhotelContext> options)
             : base(options)
         {
         }
@@ -48,15 +46,15 @@ namespace KingWilliamHotelManagementAPI.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
-                
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+                optionsBuilder.UseSqlServer("Data Source=198.71.226.6;Initial Catalog=kwhotel;Persist Security Info=True;User ID=rathorfarhan;Password=Hl5wr64@");
             }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.HasAnnotation("ProductVersion", "2.2.6-servicing-10079");
+            modelBuilder.HasAnnotation("ProductVersion", "2.2.6-servicing-10079")
+                .HasAnnotation("Relational:DefaultSchema", "rathorfarhan");
 
             modelBuilder.Entity<AspNetRoleClaims>(entity =>
             {
@@ -146,7 +144,7 @@ namespace KingWilliamHotelManagementAPI.Models
             {
                 entity.HasKey(e => new { e.MenuOptionId, e.ItemId });
 
-                entity.ToTable("jncMenuIngredients");
+                entity.ToTable("jncMenuIngredients", "dbo");
 
                 entity.Property(e => e.MenuOptionId).HasColumnName("menuOptionID");
 
@@ -171,7 +169,7 @@ namespace KingWilliamHotelManagementAPI.Models
             {
                 entity.HasKey(e => e.CreditCardNumber);
 
-                entity.ToTable("lkpCreditCard");
+                entity.ToTable("lkpCreditCard", "dbo");
 
                 entity.Property(e => e.CreditCardNumber)
                     .HasColumnName("creditCardNumber")
@@ -190,7 +188,7 @@ namespace KingWilliamHotelManagementAPI.Models
             {
                 entity.HasKey(e => e.ItemId);
 
-                entity.ToTable("lkpItems");
+                entity.ToTable("lkpItems", "dbo");
 
                 entity.Property(e => e.ItemId).HasColumnName("itemID");
 
@@ -209,7 +207,7 @@ namespace KingWilliamHotelManagementAPI.Models
             {
                 entity.HasKey(e => e.PositionId);
 
-                entity.ToTable("lkpPositionTypes");
+                entity.ToTable("lkpPositionTypes", "dbo");
 
                 entity.Property(e => e.PositionId).HasColumnName("positionID");
 
@@ -224,7 +222,7 @@ namespace KingWilliamHotelManagementAPI.Models
             {
                 entity.HasKey(e => e.ChargeableItemId);
 
-                entity.ToTable("tblChargeableItems");
+                entity.ToTable("tblChargeableItems", "dbo");
 
                 entity.Property(e => e.ChargeableItemId).HasColumnName("chargeableItemID");
 
@@ -245,7 +243,7 @@ namespace KingWilliamHotelManagementAPI.Models
             {
                 entity.HasKey(e => e.CustomerId);
 
-                entity.ToTable("tblCustomer");
+                entity.ToTable("tblCustomer", "dbo");
 
                 entity.Property(e => e.CustomerId)
                     .HasColumnName("customerID")
@@ -270,7 +268,7 @@ namespace KingWilliamHotelManagementAPI.Models
             {
                 entity.HasKey(e => e.EmployeeId);
 
-                entity.ToTable("tblEmployee");
+                entity.ToTable("tblEmployee", "dbo");
 
                 entity.Property(e => e.EmployeeId)
                     .HasColumnName("EmployeeID")
@@ -295,7 +293,7 @@ namespace KingWilliamHotelManagementAPI.Models
             {
                 entity.HasKey(e => e.InvoiceId);
 
-                entity.ToTable("tblGuestInvoice");
+                entity.ToTable("tblGuestInvoice", "dbo");
 
                 entity.Property(e => e.InvoiceId).HasColumnName("InvoiceID");
 
@@ -316,7 +314,7 @@ namespace KingWilliamHotelManagementAPI.Models
             {
                 entity.HasKey(e => e.GuestLineItemId);
 
-                entity.ToTable("tblGuestLineItems");
+                entity.ToTable("tblGuestLineItems", "dbo");
 
                 entity.Property(e => e.GuestLineItemId).HasColumnName("guestLineItemID");
 
@@ -351,7 +349,7 @@ namespace KingWilliamHotelManagementAPI.Models
             {
                 entity.HasKey(e => e.GuestStayId);
 
-                entity.ToTable("tblGuestStay");
+                entity.ToTable("tblGuestStay", "dbo");
 
                 entity.Property(e => e.GuestStayId).HasColumnName("guestStayID");
 
@@ -385,7 +383,7 @@ namespace KingWilliamHotelManagementAPI.Models
             {
                 entity.HasKey(e => e.MenuOptionId);
 
-                entity.ToTable("tblMenu");
+                entity.ToTable("tblMenu", "dbo");
 
                 entity.Property(e => e.MenuOptionId).HasColumnName("menuOptionID");
 
@@ -408,7 +406,7 @@ namespace KingWilliamHotelManagementAPI.Models
             {
                 entity.HasKey(e => new { e.OrderId, e.ItemId });
 
-                entity.ToTable("tblOrder");
+                entity.ToTable("tblOrder", "dbo");
 
                 entity.Property(e => e.OrderId)
                     .HasColumnName("orderID")
@@ -440,7 +438,7 @@ namespace KingWilliamHotelManagementAPI.Models
             {
                 entity.HasKey(e => e.PersonId);
 
-                entity.ToTable("tblPerson");
+                entity.ToTable("tblPerson", "dbo");
 
                 entity.Property(e => e.PersonId).HasColumnName("personID");
 
@@ -480,7 +478,7 @@ namespace KingWilliamHotelManagementAPI.Models
 
             modelBuilder.Entity<TblPosition>(entity =>
             {
-                entity.ToTable("tblPosition");
+                entity.ToTable("tblPosition", "dbo");
 
                 entity.Property(e => e.Id).HasColumnName("ID");
 
@@ -514,7 +512,7 @@ namespace KingWilliamHotelManagementAPI.Models
             {
                 entity.HasKey(e => e.ReservationId);
 
-                entity.ToTable("tblReservation");
+                entity.ToTable("tblReservation", "dbo");
 
                 entity.Property(e => e.ReservationId).HasColumnName("reservationID");
 
@@ -549,7 +547,7 @@ namespace KingWilliamHotelManagementAPI.Models
             {
                 entity.HasKey(e => e.RoomHouseKeepingId);
 
-                entity.ToTable("tblRoomHouseKeeping");
+                entity.ToTable("tblRoomHouseKeeping", "dbo");
 
                 entity.Property(e => e.RoomHouseKeepingId).HasColumnName("roomHouseKeepingID");
 
@@ -579,7 +577,7 @@ namespace KingWilliamHotelManagementAPI.Models
             {
                 entity.HasKey(e => e.RoomItemId);
 
-                entity.ToTable("tblRoomItems");
+                entity.ToTable("tblRoomItems", "dbo");
 
                 entity.Property(e => e.RoomItemId).HasColumnName("roomItemID");
 
@@ -609,7 +607,7 @@ namespace KingWilliamHotelManagementAPI.Models
             {
                 entity.HasKey(e => e.RoomMaintenanceId);
 
-                entity.ToTable("tblRoomMaintenance");
+                entity.ToTable("tblRoomMaintenance", "dbo");
 
                 entity.Property(e => e.RoomMaintenanceId).HasColumnName("roomMaintenanceID");
 
@@ -649,7 +647,7 @@ namespace KingWilliamHotelManagementAPI.Models
             {
                 entity.HasKey(e => e.RoomNumber);
 
-                entity.ToTable("tblRooms");
+                entity.ToTable("tblRooms", "dbo");
 
                 entity.Property(e => e.RoomNumber)
                     .HasColumnName("roomNumber")
@@ -657,8 +655,7 @@ namespace KingWilliamHotelManagementAPI.Models
 
                 entity.Property(e => e.Description)
                     .IsRequired()
-                    .HasColumnName("description")
-                    .HasMaxLength(50);
+                    .HasColumnName("description");
 
                 entity.Property(e => e.Price)
                     .HasColumnName("price")

@@ -35,9 +35,9 @@
                         <ul class="navbar-nav ml-auto">
                             @if (SignInManager.IsSignedIn(User))
                             {
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="~/Admin"><button type="button" class="btn btn-outline-dark btn-sl"> Dashboard </button></a>
-                                </li>
+
+                                <partial name="_NavigationPartial" />
+
                                 <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
                                     <button type="submit" class="btn btn-primary btn-sl"> Logout </button>
                                 </form>

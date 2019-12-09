@@ -1,10 +1,12 @@
-﻿using KingWilliamHotelManagementAPI.Models;
+﻿using KingWilliamHotelManagementAPI.Data;
+using KingWilliamHotelManagementAPI.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -15,13 +17,18 @@ namespace KingWilliamHotelManagementAPI.Controllers
     [Authorize(Roles = "Admin")]
     public class AdminController : Controller
     {
-        private readonly KingWilliamHotel_ManagementSystemContext _context;
+        private readonly kwhotelContext _context;
+        private readonly ApplicationDbContext _dbContext;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly RoleManager<ApplicationRole> _roleManager;
 
-        public AdminController(KingWilliamHotel_ManagementSystemContext context, UserManager<ApplicationUser> userManager)
+        public AdminController(kwhotelContext context, ApplicationDbContext dbContext, 
+                               UserManager<ApplicationUser> userManager, RoleManager<ApplicationRole> roleManager)
         {
             _context = context;
+            _dbContext = dbContext;
             _userManager = userManager;
+            _roleManager = roleManager;
         }
 
         // GET: /<controller>/
@@ -217,8 +224,18 @@ namespace KingWilliamHotelManagementAPI.Controllers
                     };
                     await _context.TblPosition.AddAsync(tblPosition);
 
-                    var user = _userManager.Users.Where(x => x.UserName == employeeModel.EmailAddress);
+                    var user = _userManager.Users.Where(x => x.UserName == employeeModel.EmailAddress).ToList();
 
+                    foreach(var x in user)
+                    {
+                        var previousUser = _dbContext.Users.Find(x.Id);
+                        var removeUser = await _userManager.RemoveFromRoleAsync(previousUser, _context.LkpPositionTypes.Find(positionID).Description.ToString());
+
+                        if(removeUser.Succeeded)
+                        {
+                            await _userManager.AddToRoleAsync(previousUser, _context.LkpPositionTypes.Find(employeeModel.Position).Description.ToString());
+                        }
+                    }
 
                     await _context.SaveChangesAsync();
                 }
@@ -227,6 +244,65 @@ namespace KingWilliamHotelManagementAPI.Controllers
             }
             ViewData["Position"] = new SelectList(_context.LkpPositionTypes.Where(s => s.IsActive == true), "PositionId", "Description");
             return View(employeeModel);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Invoice()
+        {
+            var invoice = await _context.TblGuestInvoice.Include(x => x.GuestStay)
+                                                            .Include(x => x.GuestStay.Customer)
+                                                            .Include(x => x.GuestStay.RoomNumberNavigation)
+                                                            .ToListAsync();
+
+            List<InvoiceModel> invoices = new List<InvoiceModel>();
+
+            foreach (var item in invoice)
+            {
+                invoices.Add(new InvoiceModel {
+                    TblGuestInvoice = item,
+                    TblGuestStay = item.GuestStay,
+                    TblPerson = await _context.TblPerson.FindAsync(item.GuestStay.Customer.CustomerId),
+                    TblRooms = item.GuestStay.RoomNumberNavigation
+                    //TblGuestLineItems = new List<TblGuestLineItems>( await _context.TblGuestLineItems
+                    //                                                                .Where(x => x.GuestStayId == item.GuestStayId).ToListAsync())
+                });
+            }
+            return View(invoices);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> InvoiceView(int id)
+        {
+            var invoice = await _context.TblGuestInvoice.Where(x => x.InvoiceId == id)
+                                                            .Include(x => x.GuestStay)
+                                                            .Include(x => x.GuestStay.Customer)
+                                                            .Include(x => x.GuestStay.RoomNumberNavigation)
+                                                            .SingleOrDefaultAsync();
+
+            InvoiceModel invoices = new InvoiceModel
+            {
+                TblGuestInvoice = invoice,
+                TblGuestStay = invoice.GuestStay,
+                TblPerson = await _context.TblPerson.FindAsync(invoice.GuestStay.Customer.CustomerId),
+                TblGuestLineItems = new List<TblGuestLineItems>(await _context.TblGuestLineItems
+                                                                                .Where(x => x.GuestStayId == invoice.GuestStayId).ToListAsync()),
+                TblRooms = invoice.GuestStay.RoomNumberNavigation,
+            };
+
+            //List<InvoiceModel> invoices = new List<InvoiceModel>();
+
+            //foreach (var item in invoice)
+            //{
+            //    invoices.Add(new InvoiceModel
+            //    {
+            //        TblGuestInvoice = item,
+            //        TblGuestStay = item.GuestStay,
+            //        TblPerson = await _context.TblPerson.FindAsync(item.GuestStay.Customer.CustomerId),
+            //        TblGuestLineItems = new List<TblGuestLineItems>( await _context.TblGuestLineItems
+            //                                                                        .Where(x => x.GuestStayId == item.GuestStayId).ToListAsync())
+            //    });
+            //}
+            return View(invoices);
         }
     }
 }

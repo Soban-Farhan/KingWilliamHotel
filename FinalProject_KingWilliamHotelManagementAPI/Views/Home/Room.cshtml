@@ -1,7 +1,35 @@
-﻿
+﻿@model KingWilliamHotelManagementAPI.Models.TblRooms
+
 @{
     ViewData["Title"] = "Room";
 }
 
-<h1>Room @ViewData["RoomID"]</h1>
+<div class="container">
+    <h3>Room Number: @Model.RoomNumber</h3>
+    <div class="row">
+        <div class="col-md-6">
+            @if (Model.RoomType == "Double")
+            {
+                <img src="~/img/double.jpg" class="img-fluid" alt="Responsive image">
+            }
+            else if (Model.RoomType == "Single    ")
+            {
+                <img src="~/img/single.jpg" class="img-fluid" alt="Responsive image">
+            }
+            else
+            {
+                <img src="~/img/suite.jpg" class="img-fluid" alt="Responsive image">
+            }
 
+            </div>
+        <div class="col-md-6">
+            <ul>
+                <li>Type: @Model.RoomType</li>
+                <li>View: @Model.RoomView</li>
+                <li>Price: @Model.Price.ToString("c")</li>
+                <li>Description: @Model.Description</li>
+            </ul>
+        </div>
+    </div>
+    
+</div>

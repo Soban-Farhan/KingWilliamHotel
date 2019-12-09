@@ -1,0 +1,35 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+
+@if (User.IsInRole("Admin"))
+{
+    <li class="nav-item ">
+        <a class="nav-link" href="~/Admin"><button type="button" class="btn btn-outline-dark btn-sl"> Dashboard </button></a>
+    </li>
+}
+else if (User.IsInRole("Concierge"))
+{
+    <li class="nav-item ">
+        <a class="nav-link" href="~/Concierge"><button type="button" class="btn btn-outline-dark btn-sl"> Dashboard </button></a>
+    </li>
+}
+else if (User.IsInRole("Maintenance"))
+{
+    <li class="nav-item ">
+        <a class="nav-link" href="~/Maintenance"><button type="button" class="btn btn-outline-dark btn-sl"> Maintenance Request </button></a>
+    </li>
+}
+else if (User.IsInRole("House Keeping"))
+{
+    <li class="nav-item ">
+        <a class="nav-link" href="~/HouseKeeping"><button type="button" class="btn btn-outline-dark btn-sl"> House Keeping Request </button></a>
+    </li>
+}
+@*else if (User.IsInRole("Hotel Manager"))
+{
+    <li class="nav-item ">
+        <a class="nav-link" href="~/HotelManager"><button type="button" class="btn btn-outline-dark btn-sl"> Dashboard </button></a>
+    </li>
+}*@

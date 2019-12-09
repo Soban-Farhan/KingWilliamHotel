@@ -17,7 +17,7 @@ namespace KingWilliamHotelManagementAPI.Models
         public int ItemId { get; set; }
         public string ItemName { get; set; }
         public string Description { get; set; }
-        public int QuantityOnHand { get; set; }
+        public int? QuantityOnHand { get; set; }
 
         public virtual ICollection<JncMenuIngredients> JncMenuIngredients { get; set; }
         public virtual ICollection<TblChargeableItems> TblChargeableItems { get; set; }

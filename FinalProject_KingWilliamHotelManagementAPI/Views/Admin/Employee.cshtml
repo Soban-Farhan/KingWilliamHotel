@@ -14,13 +14,14 @@
     @foreach (var item in Model)
     {
         <div class="col-md-4">
+            <br/>
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">@item.FirstName @item.LastName</h5>
                     <h6 class="card-subtitle mb-2 text-muted">@item.EmailAddress</h6>
                     <p class="card-text">@item.PhoneNumber</p>
                     <div class="text-center">
-                        <a href="./UpdateEmployee/@item.PersonId" class="card-link"><button type="button" class="btn btn-outline-dark btn-sl">Edit </button></a>
+                        <a href="./UpdateEmployee/@item.PersonId" class="card-link"><button type="button" class="btn btn-outline-dark btn-sl"> Edit </button></a>
                     </div>
                 </div>
             </div>
