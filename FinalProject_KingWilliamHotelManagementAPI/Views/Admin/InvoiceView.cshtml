@@ -1,0 +1,63 @@
+﻿@model KingWilliamHotelManagementAPI.Models.InvoiceModel
+@using System;
+
+@{
+    ViewData["Title"] = "Invoice";
+    var text = Math.Round((Model.TblGuestStay.EndDatetime - Model.TblGuestStay.StartDatetime).Value.TotalDays, MidpointRounding.AwayFromZero);
+    if (text <= 0) { text = 1; }
+    var total = 0.0;
+    var tax = 0.13;
+    var final = 0.0;
+}
+
+@*@foreach (var item in collection)
+{
+
+}*@
+
+<h2>Invoice: @Html.DisplayFor(model => model.TblPerson.FirstName) @Html.DisplayFor(model => model.TblPerson.LastName)</h2>
+
+<div class="text-right">
+    <p><b>Stay Start/End Date:</b> @Html.DisplayFor(model => model.TblGuestStay.StartDatetime)&nbsp;-&nbsp;@Html.DisplayFor(model => model.TblGuestStay.EndDatetime)</p>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h5>Information: </h5>
+        <p>
+            <b>Address:</b> @Html.DisplayFor(model => model.TblPerson.StreetNumber), @Html.DisplayFor(model => model.TblPerson.StreetName),
+            @Html.DisplayFor(model => model.TblPerson.City), @Html.DisplayFor(model => model.TblPerson.Country) @Html.DisplayFor(model => model.TblPerson.PostalCode)<br />
+
+            <b>Email Address:</b> @Html.DisplayFor(model => model.TblPerson.EmailAddress)<br />
+            <b>Phone #:</b> @Html.DisplayFor(model => model.TblPerson.PhoneNumber)<br />
+        </p>
+    </div>
+    <div class="col-12">
+        <h5>Items: </h5>
+        <div class="row">      
+            <div class="col-lg-12 text-right">
+                <div class="card p-2">
+                    <p class="card-text"> Room #: @Html.DisplayFor(model => model.TblRooms.RoomNumber) ................................................ @Model.TblRooms.Price.ToString("c") x @text Day(s)</p>
+                    @{ 
+                        total += Convert.ToDouble(Model.TblRooms.Price) * text;
+                    } 
+                </div>
+            </div>
+            @foreach (var item in Model.TblGuestLineItems)
+            {
+                <div class="col-lg-12 text-right">
+                    <br/>
+                    <div class="card p-2">
+                        <p class="card-text"> Item #: @Model.LkpItems.Where(x => x.ItemId == item.ItemId).Select(x => x.ItemName).SingleOrDefault().ToString() ................................................ @item.ItemPrice.ToString("c")</p>
+                        @{ total += Convert.ToDouble(item.ItemPrice); }
+                    </div>
+                </div>
+                            }
+        </div>
+        <hr/>
+        <div class="text-right">
+            <p>Cost: .............. @total.ToString("c")</p>
+            <p>Tax: ............... @{tax=(total * tax);} @tax.ToString("c")</p>
+            <p>Total: ............. @{final=(total + tax);} @final.ToString("c")</p>
+        </div>
+    </div>
+</div>
