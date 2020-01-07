@@ -1,7 +1,37 @@
-﻿
+﻿@model IEnumerable<KingWilliamHotelManagementAPI.Models.TblGuestStay>
+
 @{
     ViewData["Title"] = "ReservationCheckOut";
 }
 
-<h1>ReservationCheckOut</h1>
+<p class="text-right">
+    <a asp-action="Reservations"><button type="button" class="btn btn-outline-dark btn-sl"> Reservations </button></a>
+</p>
 
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-6">
+            <br />
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Customer.Customer.FirstName @item.Customer.Customer.LastName</h5>
+                    <h6 class="card-subtitle mb-2 text-muted"><b>Checked in time:</b> @item.StartDatetime </h6>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <b>Requested Room:</b> @item.RoomNumberNavigation.RoomNumber
+                    </h6>
+                    <div class="row">
+                        <div class="col-md-2">
+                        </div>
+                        <div class="col-md-2">
+                        </div>
+                        <div class="col-8">
+                            @*<a asp-action="ReservationCheckOut" asp-route-id="@item.GuestStayId"><button type="button" class="btn btn-outline-dark btn-sl"> Check out </button></a>*@
+                            <a href="./CheckOut/@item.GuestStayId" class="card-link"><button type="button" class="btn btn-outline-dark btn-sl"> Check out </button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

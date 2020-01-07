@@ -16,5 +16,6 @@ namespace KingWilliamHotelManagementAPI.Models
         public TblGuestInvoice TblGuestInvoice { get; set; }
 
         public List<TblGuestLineItems> TblGuestLineItems { get; set; }
+        public List<LkpItems> LkpItems { get; set; }
     }
 }

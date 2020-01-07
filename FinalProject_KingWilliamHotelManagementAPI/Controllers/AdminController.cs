@@ -262,11 +262,14 @@ namespace KingWilliamHotelManagementAPI.Controllers
                     TblGuestInvoice = item,
                     TblGuestStay = item.GuestStay,
                     TblPerson = await _context.TblPerson.FindAsync(item.GuestStay.Customer.CustomerId),
-                    TblRooms = item.GuestStay.RoomNumberNavigation
+                    TblRooms = item.GuestStay.RoomNumberNavigation,
+                    
                     //TblGuestLineItems = new List<TblGuestLineItems>( await _context.TblGuestLineItems
                     //                                                                .Where(x => x.GuestStayId == item.GuestStayId).ToListAsync())
                 });
+
             }
+
             return View(invoices);
         }
 
@@ -287,22 +290,20 @@ namespace KingWilliamHotelManagementAPI.Controllers
                 TblGuestLineItems = new List<TblGuestLineItems>(await _context.TblGuestLineItems
                                                                                 .Where(x => x.GuestStayId == invoice.GuestStayId).ToListAsync()),
                 TblRooms = invoice.GuestStay.RoomNumberNavigation,
+                LkpItems = new List<LkpItems> ()
             };
 
-            //List<InvoiceModel> invoices = new List<InvoiceModel>();
+            foreach (var x in invoices.TblGuestLineItems)
+            {
+                invoices.LkpItems.Add(await _context.LkpItems.FindAsync(x.ItemId));
+            }
 
-            //foreach (var item in invoice)
-            //{
-            //    invoices.Add(new InvoiceModel
-            //    {
-            //        TblGuestInvoice = item,
-            //        TblGuestStay = item.GuestStay,
-            //        TblPerson = await _context.TblPerson.FindAsync(item.GuestStay.Customer.CustomerId),
-            //        TblGuestLineItems = new List<TblGuestLineItems>( await _context.TblGuestLineItems
-            //                                                                        .Where(x => x.GuestStayId == item.GuestStayId).ToListAsync())
-            //    });
-            //}
             return View(invoices);
+        }
+
+        public IActionResult Orders()
+        {
+            return View();
         }
     }
 }

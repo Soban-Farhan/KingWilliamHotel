@@ -1,0 +1,70 @@
+﻿@model IEnumerable<KingWilliamHotelManagementAPI.Models.TblRoomMaintenance>
+
+@{
+    ViewData["Title"] = "Request";
+}
+
+<h1>Maintenance Requests</h1>
+<p class="text-right">
+    <a asp-action="CreateMaintenance"><button type="button" class="btn btn-outline-dark btn-sl"> New Request </button></a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Employee Name
+            </th>
+            <th>
+                Room Number
+            </th>
+            <th>
+                Desciption
+            </th>
+            <th>
+                Start Date
+            </th>
+            <th>
+                End Date
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Employee.Employee.FirstName) @Html.DisplayFor(modelItem => item.Employee.Employee.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RoomNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartDatetime.Day)/@Html.DisplayFor(modelItem => item.StartDatetime.Month)/@Html.DisplayFor(modelItem => item.StartDatetime.Year)
+            </td>
+            @if (item.EndDatetime != null)
+            {
+                <td>
+                    @Html.DisplayFor(modelItem => item.EndDatetime.Value.Day)/@Html.DisplayFor(modelItem => item.EndDatetime.Value.Month)/@Html.DisplayFor(modelItem => item.EndDatetime.Value.Year)
+                </td>
+                <td>
+                    
+                </td>
+            }
+            else
+            {
+                <td></td>
+                <td>
+                    <a asp-action="CompleteMaintenance" asp-route-id="@item.RoomMaintenanceId">Complete</a>
+                </td>
+            }
+            <td>
+                <a asp-action="DeleteMaintenance" asp-route-id="@item.RoomMaintenanceId">Delete</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

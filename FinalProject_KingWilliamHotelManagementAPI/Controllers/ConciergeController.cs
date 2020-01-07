@@ -100,7 +100,7 @@ namespace KingWilliamHotelManagementAPI.Controllers
             return View(reservationModel);
         }
 
-        public async Task<IActionResult> ReservationCheckIn(int id, int roomNum)
+        public async Task<IActionResult> ReservationCheckIn(int id, int roomNum, int res)
         {
 
             if(_context.TblCustomer.Any(x => x.CustomerId != id))
@@ -123,14 +123,47 @@ namespace KingWilliamHotelManagementAPI.Controllers
 
             await _context.TblGuestStay.AddAsync(tblGuestStay);
 
+            var room = await _context.TblRooms.FindAsync(roomNum);
+
+            room.RoomStatus = 4;
+
+            _context.Update(room);
+            
+            _context.TblReservation.Remove(await _context.TblReservation.FindAsync(res));
+
             await _context.SaveChangesAsync();
 
             return Redirect("~/Concierge/Reservations");
         }
 
-        public async Task<IActionResult> ReservationCheckOut(int id)
+        public async Task<IActionResult> ReservationCheckOut()
         {
-            return View();
+            return View(await _context.TblGuestStay.Include(x => x.Customer.Customer)
+                                                   .Include(x => x.RoomNumberNavigation)
+                                                   .Where( x => x.EndDatetime == null)
+                                                   .ToListAsync());
+        }
+
+        public async Task<IActionResult> CheckOut(int id)
+        {
+            var guestStay = await _context.TblGuestStay.FindAsync(id);
+            guestStay.EndDatetime = DateTime.Now;
+
+            var room = await _context.TblRooms.FindAsync(guestStay.RoomNumber);
+            room.RoomStatus = 0;
+
+            _context.Update(guestStay);
+            _context.Update(room);
+
+            await _context.TblGuestInvoice.AddAsync(new TblGuestInvoice
+            {
+                GuestStayId = id,
+                InvoiceDateTime = DateTime.Now
+            });
+
+            await _context.SaveChangesAsync();
+
+            return Redirect("~/Concierge/Reservations");
         }
 
         public async Task<IActionResult> HouseKeeping()
@@ -157,7 +190,7 @@ namespace KingWilliamHotelManagementAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> CreateHouseKeeping(int id)
         {
-            var employee = await _context.TblPosition.Where(x => x.PositionId == 7).ToListAsync();
+            var employee = await _context.TblPosition.Where(x => x.PositionId == 7 && x.EndDate == null).ToListAsync();
             List<EmployeeDropdown> employees = new List<EmployeeDropdown>();
 
             foreach(var x in employee)
@@ -196,7 +229,7 @@ namespace KingWilliamHotelManagementAPI.Controllers
                 return Redirect("~/Concierge/HouseKeeping");
             }
 
-            var employee = await _context.TblPosition.Where(x => x.PositionId == 7).ToListAsync();
+            var employee = await _context.TblPosition.Where(x => x.PositionId == 7 && x.EndDate == null ).ToListAsync();
             List<EmployeeDropdown> employees = new List<EmployeeDropdown>();
 
             foreach (var x in employee)
@@ -223,6 +256,99 @@ namespace KingWilliamHotelManagementAPI.Controllers
             await _context.SaveChangesAsync();
 
             return Redirect("~/Concierge/Housekeeping");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Maintenance()
+        {
+            var maintenance = await _context.TblRoomMaintenance.Include(x => x.Employee.Employee)
+                                                                .Include(x => x.RoomNumberNavigation)
+                                                                .ToListAsync();
+            return View(maintenance);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> CreateMaintenance()
+        {
+            var employee = await _context.TblPosition.Where(x => x.PositionId == 5 && x.EndDate == null).ToListAsync();
+            List<EmployeeDropdown> employees = new List<EmployeeDropdown>();
+
+            foreach (var x in employee)
+            {
+                var person = _context.TblPerson.Find(x.EmployeeId);
+                employees.Add(new EmployeeDropdown
+                {
+                    employeeId = x.EmployeeId,
+                    employeeName = person.FirstName + " " + person.LastName
+                });
+            }
+
+            ViewData["EmployeeId"] = employees.ToList();
+            ViewData["RoomNumber"] = new SelectList(_context.TblRooms, "RoomNumber", "RoomNumber");
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateMaintenance(TblRoomMaintenance roomMaintenance)
+        {
+            if(ModelState.IsValid)
+            {
+                TblRoomMaintenance tblRoom = new TblRoomMaintenance
+                {
+                    EmployeeId = roomMaintenance.EmployeeId,
+                    Description = roomMaintenance.Description,
+                    MaintenanceCode = roomMaintenance.MaintenanceCode,
+                    RoomNumber = roomMaintenance.RoomNumber,
+                    StartDatetime = DateTime.Now,
+                };
+
+                await _context.TblRoomMaintenance.AddAsync(tblRoom);
+
+                await _context.SaveChangesAsync();
+
+                return Redirect("~/Concierge/Maintenance");
+            }
+
+            var employee = await _context.TblPosition.Where(x => x.PositionId == 5 && x.EndDate == null).ToListAsync();
+            List<EmployeeDropdown> employees = new List<EmployeeDropdown>();
+
+            foreach (var x in employee)
+            {
+                var person = _context.TblPerson.Find(x.EmployeeId);
+                employees.Add(new EmployeeDropdown
+                {
+                    employeeId = x.EmployeeId,
+                    employeeName = person.FirstName + " " + person.LastName
+                });
+            }
+
+            ViewData["EmployeeId"] = employees.ToList();
+            ViewData["RoomNumber"] = new SelectList(_context.TblRooms, "RoomNumber", "RoomNumber");
+            return View();
+        }
+
+        public async Task<IActionResult> CompleteMaintenance(int id)
+        {
+            var maintenance = await _context.TblRoomMaintenance.FindAsync(id);
+            maintenance.EndDatetime = DateTime.Now;
+
+            _context.Update(maintenance);
+
+            await _context.SaveChangesAsync();
+
+            return Redirect("~/Concierge/Maintenance");
+        }
+
+        public async Task<IActionResult> DeleteMaintenance(int id)
+        {
+            var maintenance = await _context.TblRoomMaintenance.FindAsync(id);
+
+            _context.TblRoomMaintenance.Remove(maintenance);
+
+            await _context.SaveChangesAsync();
+
+            return Redirect("~/Concierge/Maintenance");
         }
     }
 }

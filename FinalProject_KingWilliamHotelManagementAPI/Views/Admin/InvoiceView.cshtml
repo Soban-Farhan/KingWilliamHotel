@@ -3,8 +3,11 @@
 
 @{
     ViewData["Title"] = "Invoice";
-    var text = (Model.TblGuestStay.EndDatetime - Model.TblGuestStay.StartDatetime).Value.TotalDays;
+    var text = Math.Round((Model.TblGuestStay.EndDatetime - Model.TblGuestStay.StartDatetime).Value.TotalDays, MidpointRounding.AwayFromZero);
+    if (text <= 0) { text = 1; }
     var total = 0.0;
+    var tax = 0.13;
+    var final = 0.0;
 }
 
 @*@foreach (var item in collection)
@@ -33,7 +36,7 @@
         <div class="row">      
             <div class="col-lg-12 text-right">
                 <div class="card p-2">
-                    <p class="card-text"> Room #: @Html.DisplayFor(model => model.TblRooms.RoomNumber) ................................................ @Model.TblRooms.Price.ToString("c") x @text Days</p>
+                    <p class="card-text"> Room #: @Html.DisplayFor(model => model.TblRooms.RoomNumber) ................................................ @Model.TblRooms.Price.ToString("c") x @text Day(s)</p>
                     @{ 
                         total += Convert.ToDouble(Model.TblRooms.Price) * text;
                     } 
@@ -44,7 +47,7 @@
                 <div class="col-lg-12 text-right">
                     <br/>
                     <div class="card p-2">
-                        <p class="card-text"> Item #: @item.ItemId ................................................ @item.ItemPrice.ToString("c")</p>
+                        <p class="card-text"> Item #: @Model.LkpItems.Where(x => x.ItemId == item.ItemId).Select(x => x.ItemName).SingleOrDefault().ToString() ................................................ @item.ItemPrice.ToString("c")</p>
                         @{ total += Convert.ToDouble(item.ItemPrice); }
                     </div>
                 </div>
@@ -52,44 +55,9 @@
         </div>
         <hr/>
         <div class="text-right">
-            <p>Total: ............. @total.ToString("c")</p>
+            <p>Cost: .............. @total.ToString("c")</p>
+            <p>Tax: ............... @{tax=(total * tax);} @tax.ToString("c")</p>
+            <p>Total: ............. @{final=(total + tax);} @final.ToString("c")</p>
         </div>
     </div>
 </div>
-
-@*<table class="table">
-    <thead>
-        <tr>
-            <th>
-                Customer:
-            </th>
-            <th>
-                Start & End Date:
-            </th>
-            <th>
-                Invoice Create Date:
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.TblPerson.FirstName) @Html.DisplayFor(modelItem => item.TblPerson.LastName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.TblGuestStay.StartDatetime) @Html.DisplayFor(modelItem => item.TblGuestStay.EndDatetime)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.TblGuestInvoice.InvoiceDateTime)
-                </td>
-                <td>
-                    <a asp-action="Invoice" asp-route-id="@item.TblGuestInvoice.InvoiceId">View</a>
-                </td>
-            </tr>
-            
-        }
-    </tbody>
-</table>*@

@@ -219,10 +219,12 @@ C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolutio
 C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_NavigationPartial.g.cshtml.cs
 C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Concierge\EditReservation.g.cshtml.cs
 C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Concierge\Reservations.g.cshtml.cs
-C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Concierge\ReservationCheckIn.g.cshtml.cs
 C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Concierge\ReservationCheckOut.g.cshtml.cs
 C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Concierge\HouseKeeping.g.cshtml.cs
 C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Concierge\CreateHouseKeeping.g.cshtml.cs
 C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\HouseKeeping\Index.g.cshtml.cs
 C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Invoice.g.cshtml.cs
 C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Admin\InvoiceView.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Concierge\Maintenance.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Concierge\CreateMaintenance.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Maintenance\Index.g.cshtml.cs
