@@ -1,0 +1,230 @@
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\bin\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.deps.json
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\bin\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.runtimeconfig.json
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\bin\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.runtimeconfig.dev.json
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\bin\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.dll
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\bin\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.pdb
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\bin\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.Views.dll
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\bin\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.Views.pdb
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.csprojAssemblyReference.cache
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.csproj.CoreCompileInputs.cache
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.RazorAssemblyInfo.cache
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.RazorAssemblyInfo.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.AssemblyInfoInputs.cache
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.AssemblyInfo.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.TagHelpers.input.cache
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.TagHelpers.output.cache
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.RazorCoreGenerate.cache
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\AccessDenied.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ConfirmEmail.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ExternalLogin.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ForgotPassword.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Lockout.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Login.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\LoginWith2fa.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\LoginWithRecoveryCode.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Logout.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\ChangePassword.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\DeletePersonalData.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\Disable2fa.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\DownloadPersonalData.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\EnableAuthenticator.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\ExternalLogins.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\GenerateRecoveryCodes.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\Index.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\ResetAuthenticator.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\SetPassword.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\TwoFactorAuthentication.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\_Layout.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\_StatusMessage.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Register.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ResetPassword.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\_ViewImports.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Error.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.RazorTargetAssemblyInfo.cache
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.RazorTargetAssemblyInfo.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.Views.pdb
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.dll
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.pdb
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.csproj.CopyComplete
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\TblPersons\Create.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\TblPersons\Delete.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\TblPersons\Details.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\TblPersons\Edit.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\TblPersons\Index.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\lkpItems\Create.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\lkpItems\Delete.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\lkpItems\Details.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\lkpItems\Edit.g.cshtml.cs
+C:\Users\soban\source\repos\FinalProject_KingWilliamHotelManagementAPI\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\lkpItems\Index.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\bin\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.deps.json
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\bin\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.runtimeconfig.json
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\bin\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.runtimeconfig.dev.json
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\bin\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.dll
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\bin\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.pdb
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\bin\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.Views.dll
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\bin\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.Views.pdb
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.csprojAssemblyReference.cache
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.csproj.CoreCompileInputs.cache
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.RazorAssemblyInfo.cache
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.RazorAssemblyInfo.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.AssemblyInfoInputs.cache
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.AssemblyInfo.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.TagHelpers.input.cache
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.TagHelpers.output.cache
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.RazorCoreGenerate.cache
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\AccessDenied.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ConfirmEmail.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ExternalLogin.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ForgotPassword.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Lockout.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Login.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\LoginWith2fa.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\LoginWithRecoveryCode.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Logout.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\ChangePassword.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\DeletePersonalData.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\Disable2fa.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\DownloadPersonalData.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\EnableAuthenticator.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\ExternalLogins.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\GenerateRecoveryCodes.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\Index.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\ResetAuthenticator.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\SetPassword.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\TwoFactorAuthentication.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\_Layout.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\_StatusMessage.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Register.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ResetPassword.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\_ViewImports.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Error.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.RazorTargetAssemblyInfo.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.Views.pdb
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.dll
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.pdb
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.csproj.CopyComplete
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Home\Reservation.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\TblReservations\Create.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\TblReservations\Delete.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\TblReservations\Details.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\TblReservations\Edit.g.cshtml.cs
+C:\Users\Soban Farhan\Documents\ORSIE\GitHub\KingWilliamHotel\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\TblReservations\Index.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\bin\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.deps.json
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\bin\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.runtimeconfig.json
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\bin\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.runtimeconfig.dev.json
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\bin\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.dll
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\bin\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.pdb
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\bin\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.Views.dll
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\bin\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.Views.pdb
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.csprojAssemblyReference.cache
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.csproj.CoreCompileInputs.cache
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.RazorAssemblyInfo.cache
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.RazorAssemblyInfo.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.AssemblyInfoInputs.cache
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.AssemblyInfo.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.TagHelpers.input.cache
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.TagHelpers.output.cache
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.RazorCoreGenerate.cache
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\AccessDenied.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ConfirmEmail.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ExternalLogin.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ForgotPassword.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Lockout.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Login.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\LoginWith2fa.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\LoginWithRecoveryCode.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Logout.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\ChangePassword.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\DeletePersonalData.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\Disable2fa.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\DownloadPersonalData.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\EnableAuthenticator.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\ExternalLogins.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\GenerateRecoveryCodes.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\Index.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\ResetAuthenticator.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\SetPassword.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\TwoFactorAuthentication.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\_Layout.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\_StatusMessage.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Register.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ResetPassword.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\_ViewImports.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Error.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Home\Reservation.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.RazorTargetAssemblyInfo.cache
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.RazorTargetAssemblyInfo.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.Views.pdb
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.dll
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.pdb
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\KingWilliamHotelManagementAPI.csproj.CopyComplete
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Concierge\Index.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Home\Room.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Index.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Admin\NewEmployee.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Admin\UpdateEmployee.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Employee.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_NavigationPartial.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Concierge\EditReservation.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Concierge\Reservations.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Concierge\ReservationCheckOut.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Concierge\HouseKeeping.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Concierge\CreateHouseKeeping.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\HouseKeeping\Index.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Invoice.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Admin\InvoiceView.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Concierge\Maintenance.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Concierge\CreateMaintenance.g.cshtml.cs
+C:\Durham College\Fall - 2019\DBAS\Content\Final Project\KingWilliamHotelSolution\FinalProject_KingWilliamHotelManagementAPI\obj\Debug\netcoreapp2.2\Razor\Views\Maintenance\Index.g.cshtml.cs

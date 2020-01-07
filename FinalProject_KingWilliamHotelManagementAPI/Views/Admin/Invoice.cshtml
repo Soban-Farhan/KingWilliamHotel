@@ -1,0 +1,50 @@
+﻿@model IEnumerable<KingWilliamHotelManagementAPI.Models.InvoiceModel>
+
+@{
+    ViewData["Title"] = "Invoice";
+}
+
+<h1>Invoice</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Customer:
+            </th>
+            <th>
+                Room #:
+            </th>
+            <th>
+                Start & End Date:
+            </th>
+            <th>
+                Invoice Create Date:
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TblPerson.FirstName) @Html.DisplayFor(modelItem => item.TblPerson.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TblRooms.RoomNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TblGuestStay.StartDatetime) - @Html.DisplayFor(modelItem => item.TblGuestStay.EndDatetime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TblGuestInvoice.InvoiceDateTime)
+            </td>
+            <td>
+                <a asp-action="InvoiceView" asp-route-id="@item.TblGuestInvoice.InvoiceId">View</a>
+            </td>
+        </tr>
+            
+        }
+    </tbody>
+</table>

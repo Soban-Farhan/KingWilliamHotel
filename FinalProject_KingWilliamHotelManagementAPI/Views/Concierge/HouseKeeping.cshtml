@@ -1,0 +1,45 @@
+﻿@model IEnumerable<KingWilliamHotelManagementAPI.Models.HouseKeepingModel>
+
+@{
+    ViewData["Title"] = "Request";
+}
+
+<h1>House Keeping Requests</h1>
+<p class="text-right">
+    <a asp-action="CreateHouseKeeping"><button type="button" class="btn btn-outline-dark btn-sl"> New Request </button></a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.employeeName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.roomNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.houseKeepingDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.employeeName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.roomNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.houseKeepingDate)
+                </td>
+                <td>
+                    <a asp-action="DeleteHouseKeeping" asp-route-id="@item.houseKeepingId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,53 @@
+﻿@model IEnumerable<KingWilliamHotelManagementAPI.Models.TblReservation>
+
+@{
+    ViewData["Title"] = "Reservation";
+}
+
+<p class="text-right">
+    <a asp-action="ReservationCheckOut"><button type="button" class="btn btn-outline-dark btn-sl"> Check Outs </button></a>
+</p>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-6">
+            <br />
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Person.FirstName @item.Person.LastName</h5>
+                    <h6 class="card-subtitle mb-2 text-muted"><b>Check in time:</b> @item.ExpectedArriveDate </h6>
+                    <h6 class="card-subtitle mb-2 text-muted"><b>Check out time:</b> @item.ExpectedLeaveDate</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <b>Requested Room:</b> @item.RoomNumberNavigation.RoomNumber 
+                        @if (item.RoomNumberNavigation.RoomStatus == 1)
+                        { <label style="color: yellow;">*Room isn't available</label> }
+                        else if (item.RoomNumberNavigation.RoomStatus == 4)
+                        { <label style="color: red;">*Room Occupied</label> }</h6>
+                    <p class="card-text" style="overflow-x: hidden;"> @item.ReservationNotes </p>
+                    <div class="row">
+                        <div class="col-md-2">
+                        </div>
+                        <div class="col-md-2">
+                        </div>
+                        <div class="col-8">
+                            @if (item.RoomNumberNavigation.RoomStatus == 0)
+                            {
+                                <a href="./EditReservation?id=@item.ReservationId&pid=@item.PersonId" class="card-link"><button type="button" class="btn btn-outline-dark btn-sl"> Edit </button></a>
+                                <a href="./ReservationCheckIn?id=@item.PersonId&roomNum=@item.RoomNumber&res=@item.ReservationId" class="card-link"><button type="button" class="btn btn-outline-dark btn-sl"> Check in </button></a>
+                            }
+                            else if (item.RoomNumberNavigation.RoomStatus == 4)
+                            {
+                                <a href="./EditReservation?id=@item.ReservationId&pid=@item.PersonId" class="card-link"><button type="button" class="btn btn-outline-dark btn-sl"> Edit </button></a>
+                            }
+                            else
+                            {
+                                <a href="./EditReservation?id=@item.ReservationId&pid=@item.PersonId" class="card-link"><button type="button" class="btn btn-outline-dark btn-sl"> Edit </button></a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
